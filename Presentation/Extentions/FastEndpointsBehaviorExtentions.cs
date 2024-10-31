@@ -1,12 +1,11 @@
 ﻿using FastEndpoints;
 
-namespace Presentation.Extentions
+namespace Presentation.Extentions;
+
+public static class FastEndpointsBehaviorExtentions
 {
-    public static class FastEndpointsBehaviorExtentions
+    public static void AddFastEndpointsBehavior(this IServiceCollection services)
     {
-        public static void AddFastEndpointsBehavior(this IServiceCollection services)
-        {
-            services.AddFastEndpoints();
-        }
+        services.AddFastEndpoints();
     }
 }

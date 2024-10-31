@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Contexts
+namespace Infrastructure.Contexts;
+
+public class ApplicationDbContext : DbContext
 {
-    public class ApplicationDbContext : DbContext
-    {
-        public ApplicationDbContext(DbContextOptions options) : base(options) { }
-    }
+    public ApplicationDbContext(DbContextOptions options) : base(options) { }
 }

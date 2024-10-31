@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{1D31A1AC-83A0-4DAC-9D1F-9AB62480B037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{1D31A1AC-83A0-4DAC-9D1F-9AB62480B037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{49770230-5A24-4B91-B82C-BD6D8BCB475A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{49770230-5A24-4B91-B82C-BD6D8BCB475A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{7E1098DB-FC8E-49D8-B574-999CF4020655}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{7E1098DB-FC8E-49D8-B574-999CF4020655}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{A60ED0A7-3D30-46DB-AA38-9CE5DE8B84C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{A60ED0A7-3D30-46DB-AA38-9CE5DE8B84C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E6000A4-E0BB-47E8-9311-9A2AF990C3BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DA2E89E4-6A74-41E0-94C7-803577A0DEE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +40,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D31A1AC-83A0-4DAC-9D1F-9AB62480B037} = {1E6000A4-E0BB-47E8-9311-9A2AF990C3BA}
+		{49770230-5A24-4B91-B82C-BD6D8BCB475A} = {1E6000A4-E0BB-47E8-9311-9A2AF990C3BA}
+		{7E1098DB-FC8E-49D8-B574-999CF4020655} = {1E6000A4-E0BB-47E8-9311-9A2AF990C3BA}
+		{A60ED0A7-3D30-46DB-AA38-9CE5DE8B84C4} = {1E6000A4-E0BB-47E8-9311-9A2AF990C3BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A95C8AE-78E6-4007-AEAA-2FE0F9BB2260}

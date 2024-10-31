@@ -1,7 +1,6 @@
-﻿namespace Domain.Interfaces
+﻿namespace Domain.Interfaces;
+
+public interface IBaseEntity
 {
-    public interface IBaseEntity
-    {
-        uint Id { get; set; }
-    }
+    uint Id { get; set; }
 }

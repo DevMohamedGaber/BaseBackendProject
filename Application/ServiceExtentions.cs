@@ -4,23 +4,22 @@ using System.Reflection;
 using FluentValidation;
 using MediatR;
 
-namespace Application
+namespace Application;
+
+public static class ServiceExtentions
 {
-    public static class ServiceExtentions
+    public static void ConfigureApplication(this IServiceCollection services)
     {
-        public static void ConfigureApplication(this IServiceCollection services)
+        var assimbly = Assembly.GetExecutingAssembly();
+        services.AddAutoMapper(assimbly);
+
+        services.AddMediatR(config =>
         {
-            var assimbly = Assembly.GetExecutingAssembly();
-            services.AddAutoMapper(assimbly);
+            config.RegisterServicesFromAssembly(assimbly);
+        });
 
-            services.AddMediatR(config =>
-            {
-                config.RegisterServicesFromAssembly(assimbly);
-            });
+        services.AddValidatorsFromAssembly(assimbly);
 
-            services.AddValidatorsFromAssembly(assimbly);
-
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-        }
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
     }
 }
