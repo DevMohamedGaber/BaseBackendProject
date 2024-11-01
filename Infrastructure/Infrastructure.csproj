@@ -23,9 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="Repositories\" />
-    <Folder Include="Queries\" />
   </ItemGroup>
 
 </Project>

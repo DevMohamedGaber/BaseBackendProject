@@ -4,9 +4,9 @@ using System.Reflection;
 using FluentValidation;
 using MediatR;
 
-namespace Application;
+namespace Application.Extentions;
 
-public static class ServiceExtentions
+public static class DependencyInjection
 {
     public static void ConfigureApplication(this IServiceCollection services)
     {

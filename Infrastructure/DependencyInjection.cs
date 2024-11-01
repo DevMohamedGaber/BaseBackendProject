@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Domain.Entities;
 
-namespace Infrastructure;
+namespace Infrastructure.Extentions;
 
-public static class ServiceExtentions
+public static class DependencyInjection
 {
     public static void ConfigureInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
